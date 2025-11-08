@@ -53,7 +53,7 @@
         <p>Ici, on peint, on bricole, on invente librement !</p>
         <p>Les ateliers sont pensés pour stimuler la curiosité, encourager la création et transformer chaque idée en une petite merveille.</p>
         <p><strong>Prêt pour devenir à ton tour un artiste ?</strong></p>
-        <button class="btn-savoir-plus">En ce maintenant</button>
+        <button class="btn-savoir-plus">En ce moment</button>
     </div>
 </section>
 <section class="section-evenements" id="evenements">
