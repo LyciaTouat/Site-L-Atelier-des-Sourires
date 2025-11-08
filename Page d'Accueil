@@ -44,3 +44,43 @@
         <p>De 4 ans à 12 ans, chaque espace est conçu pour permettre aux enfants de toucher, tester, expérimenter et comprendre le monde qui les entoure… tout en s’amusant !</p>
     </div>
 </section>
+<section class="section-ateliers" id="ateliers">
+    <div class="ateliers-image">
+        <img src="ateliers.jpg" alt="Ateliers créatifs">
+    </div>
+    <div class="ateliers-content">
+        <h2>Les z'Ateliers créatives</h2>
+        <p>Ici, on peint, on bricole, on invente librement !</p>
+        <p>Les ateliers sont pensés pour stimuler la curiosité, encourager la création et transformer chaque idée en une petite merveille.</p>
+        <p><strong>Prêt pour devenir à ton tour un artiste ?</strong></p>
+        <button class="btn-savoir-plus">En ce maintenant</button>
+    </div>
+</section>
+<section class="section-evenements" id="evenements">
+    <div class="evenements-content">
+        <h2>Événements / Animations</h2>
+        <p>Toute l'année, les histoires prennent vie et le musée s'anime !</p>
+        <p>Les animations invitent petits et grands à explorer autrement: théâtre d'ombres, projections magiques, contes illustrés ou chasse au trésors.</p>
+        <p>Une expérience où l'art devient spectacle et l'imagination, le guide du voyage.</p>
+        <button class="btn-savoir-plus">En ce moment</button>
+    </div>
+    <div class="evenements-image">
+        <img src="evenements.jpg" alt="Événements">
+    </div>
+</section>
+section class="section-newsletter">
+    <div class="newsletter-container">
+        <div class="newsletter-form">
+            <h2>Abonnez-vous à la newsletter !</h2>
+            <p>Inscrivez-vous pour ne manquer aucune de nos actualités.</p>
+            <input type="email" placeholder="Votre email">
+            <label>
+                <input type="checkbox"> Je confirme avoir pris connaissance de votre politique de confidentialité et mentions légales..
+            </label>
+            <button class="btn-inscrire">S'inscrire</button>
+        </div>
+        <div class="newsletter-image">
+            <img src="peintre.jpg" alt="Enfant peinture">
+        </div>
+    </div>
+</section>
