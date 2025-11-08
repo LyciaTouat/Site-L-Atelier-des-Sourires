@@ -37,33 +37,33 @@
   <div class="bloc bloc-explorateurs">
     <div class="texte">
       <h2>Les petits explorateurs <span>/ 4 à 7 ans</span></h2>
-      <h3>Deviens un vrai inventeur&nbsp;!</h3>
+      <h3>Deviens un vrai inventeur!</h3>
       <p>
         Dans cet atelier, les enfants reçoivent une sélection de matériaux recyclés et d’objets divers : cartons,
         bouchons, rouleaux de papier, capsules, boîtes, boutons, tissus, accessoires…
       </p>
       <p>
         Guidés par un animateur, ils imaginent et fabriquent leur invention farfelue : un robot, un animal fantastique,
-        une machine rigolote… et autre petite merveille&nbsp;!  
+        une machine rigolote… et autre petite merveille !  
         Un moment d’expérimentation actif qui peut être reproduit à la maison.
       </p>
     </div>
 
     <div class="image">
-      <img src="images/explorateurs.jpg" alt="Enfants réalisant des activités créatives">
+      <img src="explorateurs.jpg" alt="Enfants réalisant des activités créatives">
     </div>
   </div>
 
   <div class="bloc bloc-portraits">
     <div class="image">
-      <img src="images/musee.jpg" alt="Enfant observant un tableau au musée">
+      <img src="musee.jpg" alt="Enfant observant un tableau au musée">
     </div>
 
     <div class="texte">
       <h2>Portraits et Histoires <span>/ 8 à 12 ans</span></h2>
       <p>
         Sois reporter d’un monde artistique fascinant.  
-        Au programme : exploration du musée, prise de notes sur les sensations, création d’articles et de reportages, mise en scène…
+        Au programme : exploration du musée, prise de notes sur ses sensations, création d’articles et de reportages, mise en scène…
       </p>
       <p>
         Chaque groupe présente son “journal d’art” comme il le sent.  
