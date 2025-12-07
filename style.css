@@ -413,3 +413,176 @@
   color: #E9A2B8;
 }
 
+/* ================= SECTION VIOLETTE ================= */
+.cadre-violette {
+  background-color: #E1BBFF;
+  width: 100%;
+  padding: 50px 80px;
+  position: relative;
+  overflow: hidden;
+  min-height: 360px;
+}
+
+/* CARTE BLANCHE */
+.violette-carte {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 36px 46px;
+
+  width: 560px;
+  max-width: 60%;
+
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+}
+
+/* TITRE */
+.violette-titre {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  margin-bottom: 14px;
+  color: #000;
+}
+
+/* TEXTE */
+.violette-texte {
+  font-size: 18px;
+  margin-bottom: 18px;
+  color: #000;
+}
+
+/* INPUT EMAIL */
+.violette-input {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 2px solid #000;
+  font-size: 16px;
+  margin-bottom: 14px;
+}
+
+/* CHECKBOX */
+.violette-checkbox {
+  display: flex;
+  gap: 10px;
+  font-size: 13px;
+  line-height: 1.4;
+  margin-bottom: 18px;
+  color: #000;
+}
+
+.violette-checkbox input {
+  margin-top: 3px;
+}
+
+/* BOUTON */
+.violette-bouton {
+  align-self: flex-start;
+  padding: 10px 28px;
+  border-radius: 8px;
+  border: none;
+
+  background-color: #000;
+  color: #fff;
+
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* PEINTRE EN BAS À DROITE */
+.violette-peintre {
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+
+  height: 300px;
+  width: auto;
+  display: block;
+  pointer-events: none;
+}
+
+/* ====== FOOTER / BAS DE PAGE ====== */
+.footer-site {
+  background-color: #F3E5FF;
+  padding: 40px 15px 20px;
+  box-sizing: border-box;
+}
+
+.footer-contenu {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* Colonnes */
+.footer-col {
+  flex: 1;
+}
+
+/* === COLONNE GAUCHE === */
+.footer-col-gauche {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-left: -20px;
+}
+
+/* LOGO */
+.footer-logo {
+  height: 190px;
+  width: auto;
+}
+
+/* Texte gauche */
+.footer-texte-gauche p {
+  font-size: 18px;
+  line-height: 1.55;
+  color: #222;
+}
+
+/* === COLONNE DROITE === */
+.footer-col-droite {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 120px;
+  text-align: left;
+  gap: 20px;
+}
+
+/* Réseaux sociaux */
+.footer-reseaux {
+  height: 70px;
+  width: auto;
+}
+
+/* Texte droite */
+.footer-texte-droite p {
+  font-size: 18px;
+  line-height: 1.55;
+  color: #222;
+  text-align: left;
+}
+
+/* --- Ligne du bas --- */
+.footer-bottom {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+
+.footer-bottom a {
+  color: #555;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+.footer-separateur {
+  margin: 0 10px;
+}
