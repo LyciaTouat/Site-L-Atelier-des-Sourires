@@ -228,3 +228,213 @@
   text-align: justify;
   color: #000;
 }
+
+/* ================= SECTION AVATAR ================= */
+.section-avatar {
+  background-color: #0A7DD6;
+  padding: 90px 60px;
+}
+
+.avatar-intro {
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+  font-size: 46px;
+  text-align: center;
+  margin-bottom: 55px;
+  letter-spacing: 0.5px;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.25);
+}
+
+.avatar-carte {
+  max-width: 1100px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 8px solid #000;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+}
+
+.avatar-formulaire {
+  padding: 40px 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.avatar-titre {
+  font-family: 'Playfair Display', serif;
+  font-size: 34px;
+  margin-bottom: 14px;
+}
+
+.avatar-texte {
+  font-size: 23px;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+.avatar-input {
+  width: 60%;
+  padding: 12px 14px;
+  font-size: 16px;
+  border: 2px solid #000;
+  border-radius: 0;
+  margin-bottom: 14px;
+}
+
+.avatar-bouton {
+  margin-top: 22px;
+  padding: 12px 44px;
+  border: 2px solid #000;
+  background-color: #000;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.avatar-image {
+  border-left: 8px solid #000;
+  display: flex;
+}
+
+.avatar-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* ================= FOOTER ================= */
+.footer-site {
+  background-color: #CFE1EA;
+  padding: 40px 15px 20px;
+  box-sizing: border-box;
+}
+
+.footer-contenu {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-col {
+  flex: 1;
+}
+
+.footer-col-gauche {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-left: -20px;
+}
+
+.footer-logo {
+  height: 190px;
+  width: auto;
+}
+
+.footer-texte-gauche p {
+  font-size: 18px;
+  line-height: 1.55;
+  color: #222;
+}
+
+.footer-col-droite {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 120px;
+  text-align: left;
+  gap: 20px;
+}
+
+.footer-reseaux {
+  height: 70px;
+  width: auto;
+}
+
+.footer-texte-droite p {
+  font-size: 18px;
+  line-height: 1.55;
+  color: #222;
+  text-align: left;
+}
+
+.footer-bottom {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+
+.footer-bottom a {
+  color: #555;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+.footer-separateur {
+  margin: 0 10px;
+}
+/* ================= RESPONSIVE MOBILE (≤ 768px) ================= */
+@media (max-width: 768px) {
+
+  /* ===== HEADER + MENU ===== */
+  .header {
+    height: 110px;
+    align-items: center;
+  }
+
+  .header-content {
+    padding: 0 16px;
+  }
+
+  .logo {
+    height: 130px;
+    margin-top: 0;
+  }
+
+  /* on cache les liens du menu et on affiche juste un "burger" décoratif */
+  .menu {
+    margin-left: auto;
+    flex: 0 0 auto;
+    justify-content: flex-end;
+  }
+
+  .menu a {
+    display: none;
+  }
+
+  .menu::before {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 3px;
+    background-color: #222;
+    border-radius: 2px;
+    box-shadow: 0 7px 0 #222, 0 14px 0 #222; /* 3 traits */
+  }
+
+  /* ===== HERO (grande photo de classe) ===== */
+  .hero-atelier {
+    height: 380px;
+  }
+
+  .hero-texte {
+    padding: 0 16px;
+  }
+
+  .hero-titre {
+    font-size: 40px;
+    margin-bottom: 24px;
+    white-space: normal; /* pour que ça puisse revenir à la ligne sur mobile */
+  }
+
+  .hero-sous-titre {
+    font-size: 22px;
+    letter-spacing: 0.08em;
+    margin-top: 12px;
+  }
