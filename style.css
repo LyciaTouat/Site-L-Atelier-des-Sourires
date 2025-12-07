@@ -321,3 +321,72 @@
   background-color: #3a2200;
   color: #F6B231;
 }
+/* ====== SECTION ROSE ====== */
+.cadre-rose {
+  background-color: #F57F8B;   /* 🌸 rose */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.rose-contenu {
+  display: flex;
+  height: 800px;          /* même hauteur que l’orange */
+  overflow: hidden;
+}
+
+/* TEXTE */
+.rose-texte {
+  flex: 1;
+  background-color: #F57F8B;
+
+  padding: 90px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* IMAGE */
+.rose-image {
+  flex: 1;
+  overflow: hidden;
+}
+
+.rose-image img {
+  width: 110%;
+  height: 100%;
+  object-fit: cover;
+
+  margin-right: -15%; /* s’étend vers la gauche */
+
+  border-top-left-radius: 60px;
+  border-bottom-left-radius: 60px;
+}
+
+/* TITRE */
+.rose-titre {
+  font-family: 'Playfair Display', serif;
+  font-size: 50px;
+  margin-bottom: 36px;
+  color: #3a2200;
+}
+
+/* PARAGRAPHES */
+.rose-paragraphe {
+  font-size: 24px;
+  line-height: 1.7;
+  text-align: justify;
+  color: #3a2200;
+  margin-bottom: 22px;
+}
+
+/* PHRASE ITALIQUE */
+.rose-phrase {
+  font-size: 26px;
+  font-style: italic;
+  margin: 36px 0;
+  color: #3a2200;
+}
+
