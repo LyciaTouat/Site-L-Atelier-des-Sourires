@@ -748,3 +748,46 @@
     font-size: 18px;
   }
 
+  .rose-image {
+    order: 1;          /* l’image passe en dessous du texte */
+  }
+
+  .rose-image img {
+    width: 100%;
+    margin-right: 0;
+    border-radius: 0;
+    height: 260px;
+  }
+
+  /* ===== SECTION VIOLETTE (NEWSLETTER) ===== */
+  .cadre-violette {
+    padding: 30px 16px;
+    min-height: auto;
+  }
+
+  .violette-carte {
+    width: 100%;
+    max-width: 100%;
+    padding: 24px 20px;
+  }
+
+  .violette-titre {
+    font-size: 24px;
+  }
+
+  .violette-texte {
+    font-size: 16px;
+  }
+
+  .violette-input {
+    width: 100%;
+  }
+
+  .violette-checkbox {
+    font-size: 12px;
+  }
+
+  .violette-peintre {
+    display: none;   /* on cache le peintre sur mobile */
+  }
+
