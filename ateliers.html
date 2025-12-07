@@ -1,74 +1,114 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>L'Atelier des Sourires </title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>L’Atelier des Sourires</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="Pageatelier.css">
 </head>
 <body>
-<header>
-    <div class="logo">
-        <img src="images/logo.png" alt="L'Atelier Sourire Logo">
-    </div>
-    <nav>
-        <a href="#musee">Le Musée</a>
-        <a href="#expositions">Expositions</a>
-        <a href="ateliers.html">Les z'Ateliers</a>
-        <a href="#evenements">Événements</a>
-        <a href="#" class="btn-billetterie">Billetterie</a>
+
+<header class="header">
+  <div class="header-content">
+
+    <img src="logoprojet.jpg" alt="L'Atelier des Sourires" class="logo">
+
+    <!-- MENU -->
+    <nav class="menu">
+      <a href="#">Le Musée</a>
+      <a href="#">Expositions</a>
+      <a href="#">Les z’Ateliers</a>
+      <a href="#">Événements</a>
+      <a href="#" class="billetterie">Billetterie</a>
     </nav>
-<head>
-  <meta charset="utf-8">
-  <title>Les z’Ateliers créatives</title>
-  <link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet">
-</head>
-<body>
-  <section class="les-z-ateliers-creatives">
-    <img src="images/classe.jpg" alt="Salle lumineuse avec tables et matériel créatif" class="les-z-ateliers-creatives-image">
-    <div class="les-z-ateliers-creatives-inner" style="font-family:'Belleza', sans-serif;">
-      <h1>Les z’Ateliers créatives</h1>
-      <p>imagine, teste, crée</p>
-    </div>
-  </section>
-</body>
-</html>
-<section class="activites">
-  <div class="bloc bloc-explorateurs">
-    <div class="texte">
-      <h2>Les petits explorateurs <span>/ 4 à 7 ans</span></h2>
-      <h3>Deviens un vrai inventeur!</h3>
-      <p>
-        Dans cet atelier, les enfants reçoivent une sélection de matériaux recyclés et d’objets divers : cartons,
-        bouchons, rouleaux de papier, capsules, boîtes, boutons, tissus, accessoires…
-      </p>
-      <p>
-        Guidés par un animateur, ils imaginent et fabriquent leur invention farfelue : un robot, un animal fantastique,
-        une machine rigolote… et autre petite merveille !  
-        Un moment d’expérimentation actif qui peut être reproduit à la maison.
-      </p>
-    </div>
 
-    <div class="image">
-      <img src="images/explorateurs.jpg" alt="Enfants réalisant des activités créatives">
-    </div>
   </div>
+</header>
 
-  <div class="bloc bloc-portraits">
-    <div class="image">
-      <img src="images/musee.jpg" alt="Enfant observant un tableau au musée">
+<!-- ================= HERO ATELIERS ================= -->
+<section class="hero-atelier">
+  <img src="classe.jpg" alt="Salle des ateliers" class="hero-image">
+
+  <div class="hero-texte">
+    <h1 class="hero-titre">Les z’Ateliers créatives</h1>
+    <p class="hero-sous-titre">imagine, teste, crée</p>
+  </div>
+</section>
+
+<!-- ====== BLOC ORANGE : LES PETITS EXPLORATEURS ====== -->
+<section class="atelier-explorateurs">
+
+  <div class="atelier-explorateurs-inner">
+
+    <h2 class="atelier-explorateurs-titre">
+      Les petits explorateurs <span class="atelier-age">/ 4 à 7 ans</span>
+    </h2>
+
+    <p class="atelier-explorateurs-sous-titre">
+      Devient un vrai inventeur&nbsp;!
+    </p>
+
+    <div class="atelier-explorateurs-grid">
+
+      <!-- TEXTE GAUCHE -->
+      <p class="atelier-explorateurs-texte">
+        Dans cet atelier, les enfants reçoivent une sélection de matériaux
+        recyclés et d’objets divers : cartons, bouchons, rouleaux de papier,
+        capsules, boîtes, boutons, tissus, accessoires…
+      </p>
+
+      <!-- TEXTE DROITE (remonté un peu) -->
+      <p class="atelier-explorateurs-texte texte-haut">
+        Guidés par un animateur, ils imaginent et fabriquent leur invention
+        farfelue : un robot, un animal fantastique, une machine rigolote…
+        et autre petite merveille&nbsp;! Un moment d’expérimentation actif
+        qui peut être reproduit à la maison.
+      </p>
+
+      <!-- IMAGE -->
+      <div class="atelier-explorateurs-image">
+        <img src="explorateurs.jpg" alt="Atelier créatif">
+      </div>
+
     </div>
 
-    <div class="texte">
-      <h2>Portraits et Histoires <span>/ 8 à 12 ans</span></h2>
-      <p>
-        Sois reporter d’un monde artistique fascinant.  
-        Au programme : exploration du musée, prise de notes sur ses sensations, création d’articles et de reportages, mise en scène…
-      </p>
-      <p>
-        Chaque groupe présente son “journal d’art” comme il le sent.  
-        Un moment où créativité, expression et réflexion se rencontrent pour transformer le musée en un véritable terrain de découvertes.
-      </p>
+  </div>
+</section>
+
+<!-- ====== 2e BLOC ORANGE : PORTRAITS ET HISTOIRES ====== -->
+<section class="atelier-portraits-section">
+
+  <div class="atelier-portraits-inner">
+
+    <!-- IMAGE À GAUCHE -->
+    <div class="atelier-portraits-image">
+      <img src="musee.jpg" alt="musee petite fille">
+    </div>
+
+    <!-- TITRE + TEXTES À DROITE -->
+    <div class="atelier-portraits-contenu">
+
+      <h2 class="atelier-portraits-titre">
+        Portraits et Histoires
+        <span class="atelier-age-portraits">/ 8 à 12 ans</span>
+      </h2>
+
+      <div class="atelier-portraits-texte-grid">
+        <p class="atelier-portraits-texte">
+          Sois reporter d’un monde artistique fascinant. Au programme,
+          exploration du musée, prise de notes sur tes sensations, créations
+          de croquis, d’articles et de reportages, mise en scène…
+        </p>
+
+        <p class="atelier-portraits-texte">
+          Chaque groupe présente son “journal d’art” comme il le sent.
+          Un moment où créativité, expression et réflexion se rencontrent
+          pour transformer le musée en un véritable terrain de découvertes.
+        </p>
+      </div>
     </div>
   </div>
 </section>
+
