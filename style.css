@@ -586,3 +586,165 @@
 .footer-separateur {
   margin: 0 10px;
 }
+/* ================= RESPONSIVE MOBILE ================= */
+/* ================= RESPONSIVE MOBILE ================= */
+@media screen and (max-width: 768px) {
+
+  /* HEADER + MENU (logo + 3 barres) */
+  .header {
+    height: 110px;
+  }
+
+  .header-content {
+    padding: 0 16px;
+  }
+
+  .logo {
+    height: 130px;
+    margin-top: 0;
+  }
+
+  /* on cache les liens et on affiche juste une icône "menu" */
+  .menu {
+    margin-left: 0;
+    justify-content: flex-end;
+    position: relative;
+  }
+
+  .menu a {
+    display: none;
+  }
+
+  .menu::before {
+    content: "≡";
+    font-size: 30px;
+    font-weight: 700;
+    color: #222;
+    display: block;
+    padding: 8px 4px;
+  }
+
+  /* PHRASE SOUS LES 2 GRANDES IMAGES */
+  .phrase {
+    font-size: 24px;
+    margin: 32px 16px;
+    white-space: normal;
+  }
+
+  /* ===== CADRE VERT (image + texte) ===== */
+  .cadre-vert {
+    padding: 40px 16px;
+  }
+
+  .bloc-image {
+    width: 100%;
+    margin: 0;
+  }
+
+  .bloc-image img {
+    border-radius: 30px;
+  }
+
+  /* le texte n’est plus “posé” sur l’image → il passe dessous */
+  .texte-image {
+    position: static;
+    transform: none;
+    margin-top: 20px;
+    color: #000;
+    text-shadow: none;
+    font-size: 18px;
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .texte-image p {
+    margin-bottom: 10px;
+  }
+
+  /* ===== CADRE BLEU : EXPOSITIONS ===== */
+  .cadre-bleu {
+    padding: 40px 16px;
+  }
+
+  .titre-bleu {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+
+  .expositions {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .expo-item {
+    width: 100%;
+  }
+
+  .image-container,
+  .image-container img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* ===== SECTION ORANGE ===== */
+  .cadre-orange {
+    padding: 0;
+  }
+
+  .orange-contenu {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .orange-image {
+    order: -1;           /* l’image en haut sur mobile */
+  }
+
+  .orange-image img {
+    border-radius: 0;
+    height: 260px;
+  }
+
+  .orange-texte {
+    padding: 40px 20px 50px;
+  }
+
+  .orange-titre {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .orange-paragraphe,
+  .orange-question {
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .orange-bouton {
+    align-self: center;
+  }
+
+  /* ===== SECTION ROSE ===== */
+  .cadre-rose {
+    padding: 0;
+  }
+
+  .rose-contenu {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .rose-texte {
+    padding: 40px 20px 20px;
+  }
+
+  .rose-titre {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .rose-paragraphe,
+  .rose-phrase {
+    font-size: 18px;
+  }
+
