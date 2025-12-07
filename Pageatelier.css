@@ -28,7 +28,7 @@
   margin-top: 5px;
 }
 
-/* ================= MENU ================= */
+/* MENU */
 .menu {
   display: flex;
   align-items: center;
@@ -45,7 +45,6 @@
   padding-bottom: 4px;
 }
 
-/* soulignement animé des liens du menu (sauf billetterie) */
 .menu a:not(.billetterie)::after {
   content: "";
   position: absolute;
@@ -61,7 +60,7 @@
   width: 100%;
 }
 
-/* bouton billetterie */
+
 .billetterie {
   padding: 8px 18px;
   border: 2px solid #222;
@@ -71,10 +70,10 @@
 
 .billetterie:hover {
   transform: translateY(-2px);
-  background-color: #ffffff; /* fond blanc au survol */
+  background-color: #ffffff; 
 }
 
-/* ================= HERO ATELIER ================= */
+/* HERO ATELIER*/
 .hero-atelier {
   position: relative;
   width: 100%;
@@ -89,7 +88,7 @@
   display: block;
 }
 
-/* texte centré sur l'image */
+
 .hero-texte {
   position: absolute;
   top: 50%;
@@ -120,7 +119,7 @@
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.35);
 }
 
-/* ================= BLOC ORANGE : LES PETITS EXPLORATEURS ================= */
+/* BLOC ORANGE : LES PETITS EXPLORATEURS */
 .atelier-explorateurs {
   background-color: #F6B231;
   padding: 60px 80px 40px;
@@ -176,7 +175,7 @@
   border-radius: 20px;
 }
 
-/* ================= 2e BLOC ORANGE : PORTRAITS ET HISTOIRES ================= */
+/* 2e BLOC ORANGE : PORTRAITS ET HISTOIRES */
 .atelier-portraits-section {
   background-color: #F6B231;
   padding: 10px 80px 60px;
@@ -229,7 +228,7 @@
   color: #000;
 }
 
-/* ================= SECTION AVATAR ================= */
+/* SECTION AVATAR */
 .section-avatar {
   background-color: #0A7DD6;
   padding: 90px 60px;
@@ -302,7 +301,7 @@
   height: 100%;
   object-fit: cover;
 }
-/* ================= FOOTER ================= */
+/* FOOTER */
 .footer-site {
   background-color: #CFE1EA;
   padding: 40px 15px 20px;
@@ -379,10 +378,10 @@
 .footer-separateur {
   margin: 0 10px;
 }
-/* ================= RESPONSIVE MOBILE (≤ 768px) ================= */
+/* RESPONSIVE MOBILE  */
 @media (max-width: 768px) {
 
-  /* ===== HEADER + MENU ===== */
+  /* HEADER + MENU */
   .header {
     height: 110px;
     align-items: center;
@@ -397,7 +396,6 @@
     margin-top: 0;
   }
 
-  /* on cache les liens du menu et on affiche juste un "burger" décoratif */
   .menu {
     margin-left: auto;
     flex: 0 0 auto;
@@ -415,10 +413,10 @@
     height: 3px;
     background-color: #222;
     border-radius: 2px;
-    box-shadow: 0 7px 0 #222, 0 14px 0 #222; /* 3 traits */
+    box-shadow: 0 7px 0 #222, 0 14px 0 #222;
   }
 
-  /* ===== HERO (grande photo de classe) ===== */
+  /* HERO (grande photo de classe)*/
   .hero-atelier {
     height: 380px;
   }
@@ -430,7 +428,7 @@
   .hero-titre {
     font-size: 40px;
     margin-bottom: 24px;
-    white-space: normal; /* pour que ça puisse revenir à la ligne sur mobile */
+    white-space: normal; 
   }
 
   .hero-sous-titre {
@@ -438,7 +436,7 @@
     letter-spacing: 0.08em;
     margin-top: 12px;
   }
-/* ===== BLOC ORANGE : LES PETITS EXPLORATEURS ===== */
+/* BLOC ORANGE : LES PETITS EXPLORATEURS */
   .atelier-explorateurs {
     padding: 40px 20px 30px;
   }
@@ -453,7 +451,7 @@
   }
 
   .atelier-explorateurs-grid {
-    grid-template-columns: 1fr;   /* on passe en une seule colonne */
+    grid-template-columns: 1fr;   
     row-gap: 24px;
   }
 
@@ -462,7 +460,7 @@
   }
 
   .texte-haut {
-    top: 0;                       /* on enlève le décalage vertical */
+    top: 0;                     
   }
 
   .atelier-explorateurs-image {
@@ -475,14 +473,14 @@
     max-width: 320px;
     height: auto;
   }
-/* ===== 2e BLOC ORANGE : PORTRAITS ET HISTOIRES ===== */
+/* 2e BLOC ORANGE : PORTRAITS ET HISTOIRES */
   .atelier-portraits-section {
     padding: 40px 20px 50px;
   }
 
   .atelier-portraits-inner {
     max-width: 100%;
-    grid-template-columns: 1fr;   /* image puis textes en colonne */
+    grid-template-columns: 1fr;   
     row-gap: 24px;
   }
 
@@ -494,7 +492,7 @@
 
   .atelier-portraits-titre {
     font-size: 34px;
-    white-space: normal;          /* titre + âge peuvent revenir à la ligne */
+    white-space: normal;          
     text-align: center;
   }
 
@@ -503,14 +501,14 @@
   }
 
   .atelier-portraits-texte-grid {
-    grid-template-columns: 1fr;   /* textes l’un sous l’autre */
+    grid-template-columns: 1fr;   
     row-gap: 18px;
   }
 
   .atelier-portraits-texte {
     font-size: 18px;
   }
- /* ===== SECTION AVATAR ===== */
+ /* SECTION AVATAR  */
   .section-avatar {
     padding: 60px 20px;
   }
@@ -522,7 +520,7 @@
 
   .avatar-carte {
     max-width: 100%;
-    grid-template-columns: 1fr;   /* formulaire au-dessus, image en dessous */
+    grid-template-columns: 1fr;   
   }
 
   .avatar-formulaire {
@@ -547,9 +545,9 @@
 
   .avatar-image {
     border-left: none;
-    border-top: 8px solid #000;   /* séparation horizontale */
+    border-top: 8px solid #000;   
   }
-  /* ===== FOOTER ===== */
+  /* FOOTER */
   .footer-site {
     padding: 30px 15px 18px;
   }
