@@ -438,3 +438,40 @@
     letter-spacing: 0.08em;
     margin-top: 12px;
   }
+/* ===== BLOC ORANGE : LES PETITS EXPLORATEURS ===== */
+  .atelier-explorateurs {
+    padding: 40px 20px 30px;
+  }
+
+  .atelier-explorateurs-inner {
+    max-width: 100%;
+  }
+
+  .atelier-explorateurs-titre,
+  .atelier-explorateurs-sous-titre {
+    text-align: left;
+  }
+
+  .atelier-explorateurs-grid {
+    grid-template-columns: 1fr;   /* on passe en une seule colonne */
+    row-gap: 24px;
+  }
+
+  .atelier-explorateurs-texte {
+    font-size: 18px;
+  }
+
+  .texte-haut {
+    top: 0;                       /* on enlève le décalage vertical */
+  }
+
+  .atelier-explorateurs-image {
+    top: 0;
+    justify-self: center;
+  }
+
+  .atelier-explorateurs-image img {
+    width: 80%;
+    max-width: 320px;
+    height: auto;
+  }
