@@ -323,7 +323,7 @@
 }
 /* ====== SECTION ROSE ====== */
 .cadre-rose {
-  background-color: #F57F8B;   /* 🌸 rose */
+  background-color: #F57F8B;   
   width: 100%;
   margin: 0;
   padding: 0;
@@ -331,7 +331,7 @@
 
 .rose-contenu {
   display: flex;
-  height: 800px;          /* même hauteur que l’orange */
+  height: 800px;        
   overflow: hidden;
 }
 
@@ -359,7 +359,7 @@
   height: 100%;
   object-fit: cover;
 
-  margin-right: -15%; /* s’étend vers la gauche */
+  margin-right: -15%; 
 
   border-top-left-radius: 60px;
   border-bottom-left-radius: 60px;
@@ -586,7 +586,7 @@
 .footer-separateur {
   margin: 0 10px;
 }
-/* ================= RESPONSIVE MOBILE ================= */
+
 /* ================= RESPONSIVE MOBILE ================= */
 @media screen and (max-width: 768px) {
 
@@ -604,7 +604,7 @@
     margin-top: 0;
   }
 
-  /* on cache les liens et on affiche juste une icône "menu" */
+
   .menu {
     margin-left: 0;
     justify-content: flex-end;
@@ -645,7 +645,6 @@
     border-radius: 30px;
   }
 
-  /* le texte n’est plus “posé” sur l’image → il passe dessous */
   .texte-image {
     position: static;
     transform: none;
@@ -697,7 +696,7 @@
   }
 
   .orange-image {
-    order: -1;           /* l’image en haut sur mobile */
+    order: -1;           
   }
 
   .orange-image img {
@@ -749,7 +748,7 @@
   }
 
   .rose-image {
-    order: 1;          /* l’image passe en dessous du texte */
+    order: 1;         
   }
 
   .rose-image img {
@@ -788,7 +787,7 @@
   }
 
   .violette-peintre {
-    display: none;   /* on cache le peintre sur mobile */
+    display: none;   
   }
 
   /* ===== FOOTER ===== */
