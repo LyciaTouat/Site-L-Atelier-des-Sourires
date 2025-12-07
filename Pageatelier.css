@@ -510,3 +510,78 @@
   .atelier-portraits-texte {
     font-size: 18px;
   }
+ /* ===== SECTION AVATAR ===== */
+  .section-avatar {
+    padding: 60px 20px;
+  }
+
+  .avatar-intro {
+    font-size: 30px;
+    margin-bottom: 35px;
+  }
+
+  .avatar-carte {
+    max-width: 100%;
+    grid-template-columns: 1fr;   /* formulaire au-dessus, image en dessous */
+  }
+
+  .avatar-formulaire {
+    padding: 30px 24px;
+  }
+
+  .avatar-titre {
+    font-size: 28px;
+  }
+
+  .avatar-texte {
+    font-size: 18px;
+  }
+
+  .avatar-input {
+    width: 100%;
+  }
+
+  .avatar-bouton {
+    align-self: center;
+  }
+
+  .avatar-image {
+    border-left: none;
+    border-top: 8px solid #000;   /* séparation horizontale */
+  }
+  /* ===== FOOTER ===== */
+  .footer-site {
+    padding: 30px 15px 18px;
+  }
+
+  .footer-contenu {
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .footer-col-gauche {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .footer-logo {
+    height: 140px;
+  }
+
+  .footer-texte-gauche p,
+  .footer-texte-droite p {
+    text-align: center;
+  }
+
+  .footer-col-droite {
+    margin-left: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-reseaux {
+    height: 60px;
+  }
+}
