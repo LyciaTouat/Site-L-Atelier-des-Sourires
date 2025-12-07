@@ -475,3 +475,38 @@
     max-width: 320px;
     height: auto;
   }
+/* ===== 2e BLOC ORANGE : PORTRAITS ET HISTOIRES ===== */
+  .atelier-portraits-section {
+    padding: 40px 20px 50px;
+  }
+
+  .atelier-portraits-inner {
+    max-width: 100%;
+    grid-template-columns: 1fr;   /* image puis textes en colonne */
+    row-gap: 24px;
+  }
+
+  .atelier-portraits-image img {
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto;
+  }
+
+  .atelier-portraits-titre {
+    font-size: 34px;
+    white-space: normal;          /* titre + âge peuvent revenir à la ligne */
+    text-align: center;
+  }
+
+  .atelier-age-portraits {
+    font-size: 24px;
+  }
+
+  .atelier-portraits-texte-grid {
+    grid-template-columns: 1fr;   /* textes l’un sous l’autre */
+    row-gap: 18px;
+  }
+
+  .atelier-portraits-texte {
+    font-size: 18px;
+  }
