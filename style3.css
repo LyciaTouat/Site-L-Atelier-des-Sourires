@@ -1,1 +1,157 @@
+/* Reset simple */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HEADER = IMAGE DE FOND */
+.header {
+  background-image: url("Bannièreviolette.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 140px;
+  display: flex;
+  align-items: center;
+}
+
+/* CONTENU SUR L’IMAGE */
+.header-content {
+  width: 100%;
+  padding: 0 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* LOGO */
+.logo {
+  height: 195px;
+  width: auto;
+  display: block;
+  margin-top: 5px; /* optionnel */
+}
+
+/* MENU */
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;  /* étale bien les liens sur la largeur */
+  flex: 1;                        /* prend tout l’espace dispo à droite du logo */
+  margin-left: 60px;              /* espace entre logo et menu */
+}
+
+.menu a {
+  text-decoration: none;
+  color: #222;
+  font-size: 19px;
+  position: relative;             /* pour le soulignement animé */
+  padding-bottom: 4px;
+}
+
+/* soulignement animé pour tous les liens DU MENU sauf billetterie */
+.menu a:not(.billetterie)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #222;
+  transition: width 0.25s ease;
+}
+
+.menu a:not(.billetterie):hover::after {
+  width: 100%;
+}
+
+/* BOUTON BILLETTERIE */
+.billetterie {
+  padding: 8px 18px;
+  border: 2px solid #222;
+  border-radius: 30px;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+/* pas de soulignement pour billetterie */
+.billetterie::after {
+  content: none;
+}
+
+/* effet bouton léger au survol, sans tout noircir */
+.billetterie:hover {
+  background-color: #ffffff;           /* fond clair */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transform: translateY(-2px);
+}
+
+.phrase {
+  font-family: 'Playfair Display', serif;
+  font-size: 52px;
+  text-align: center;
+  margin: 80px auto;
+  white-space: nowrap;   /* ← FORCE UNE SEULE LIGNE */
+}
+
+/* ===== CADRE VERT ===== */
+.cadre-vert {
+  background-color: #AED680;
+  padding: 80px 40px;
+  width: 100%;
+  margin: 0;
+}
+
+/* TITRE DANS LE CADRE VERT */
+.cadre-vert h2 {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  margin-bottom: 50px;
+}
+
+/* ===== IMAGE AVEC TEXTE DESSUS ===== */
+.bloc-image {
+  position: relative;
+  width: calc(100% + 80px);
+  margin-left: -40px;
+  margin-right: -40px;
+}
+
+.bloc-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 50px;
+}
+
+/* TEXTE BLANC DANS L’IMAGE */
+.texte-image {
+  position: absolute;
+  top: 52%;              /* ✅ remonte un peu le texte */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+
+  font-size: 26px;
+  max-width: 700px;      /* ✅ un tout petit peu plus large */
+  line-height: 1.5;
+  text-align: left;
+
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* ESPACEMENT ENTRE LES PARAGRAPHES */
+.texte-image p {
+  margin-bottom: 6px;
+}
+
+.cadre-bleu {
+  background-color: #0A7DD6;
+  padding: 80px 40px;
+  width: 100%;
+  margin: 0;
+}
 
