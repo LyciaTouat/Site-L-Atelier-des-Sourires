@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================= HEADER ================= */
+.header {
+  background-image: url("Bannièreviolette.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 140px;
+  display: flex;
+  align-items: center;
+}
+
+.header-content {
+  width: 100%;
+  padding: 0 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 195px;
+  width: auto;
+  margin-top: 5px;
+}
+
+/* ================= MENU ================= */
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex: 1;
+  margin-left: 60px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #222;
+  font-size: 19px;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+/* soulignement animé des liens du menu (sauf billetterie) */
+.menu a:not(.billetterie)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #222;
+  transition: 0.25s ease;
+}
+
+.menu a:not(.billetterie):hover::after {
+  width: 100%;
+}
+
+/* bouton billetterie */
+.billetterie {
+  padding: 8px 18px;
+  border: 2px solid #222;
+  border-radius: 30px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.billetterie:hover {
+  transform: translateY(-2px);
+  background-color: #ffffff; /* fond blanc au survol */
+}
+
+/* ================= HERO ATELIER ================= */
+.hero-atelier {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* texte centré sur l'image */
+.hero-texte {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  padding: 0 40px;
+}
+
+.hero-titre {
+  font-family: 'Playfair Display', serif;
+  font-size: 56px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 60px;
+  white-space: nowrap;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.35);
+}
+
+.hero-sous-titre {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-top: 25px;
+  letter-spacing: 0.12em;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.35);
+}
+
+/* ================= BLOC ORANGE : LES PETITS EXPLORATEURS ================= */
+.atelier-explorateurs {
+  background-color: #F6B231;
+  padding: 60px 80px 40px;
+}
+
+.atelier-explorateurs-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.atelier-explorateurs-titre {
+  font-family: 'Playfair Display', serif;
+  font-size: 46px;
+  margin-bottom: 16px;
+}
+
+.atelier-age {
+  font-size: 32px;
+}
+
+.atelier-explorateurs-sous-titre {
+  font-size: 24px;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.atelier-explorateurs-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1.1fr auto;
+  column-gap: 40px;
+}
+
+.atelier-explorateurs-texte {
+  font-size: 22px;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.texte-haut {
+  position: relative;
+  top: -45px;
+}
+
+.atelier-explorateurs-image {
+  position: relative;
+  top: -100px;
+}
+
+.atelier-explorateurs-image img {
+  width: 410px;
+  height: 410px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* ================= 2e BLOC ORANGE : PORTRAITS ET HISTOIRES ================= */
+.atelier-portraits-section {
+  background-color: #F6B231;
+  padding: 10px 80px 60px;
+}
+
+.atelier-portraits-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 1.1fr;
+  column-gap: 50px;
+  align-items: center;
+}
+
+.atelier-portraits-image img {
+  width: 550px;
+  height: auto;
+  border-radius: 25px;
+  object-fit: cover;
+  display: block;
+}
+
+.atelier-portraits-contenu {
+  display: flex;
+  flex-direction: column;
+}
+
+.atelier-portraits-titre {
+  font-family: 'Playfair Display', serif;
+  font-size: 44px;
+  color: #000;
+  margin-bottom: 24px;
+  white-space: nowrap;
+}
+
+.atelier-age-portraits {
+  font-size: 28px;
+}
+
+.atelier-portraits-texte-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+}
+
+.atelier-portraits-texte {
+  font-size: 20px;
+  line-height: 1.8;
+  text-align: justify;
+  color: #000;
+}
