@@ -1,11 +1,10 @@
-/* Reset simple */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* HEADER = IMAGE DE FOND */
+
 .header {
   background-image: url("Bannièreviolette.jpg");
   background-size: cover;
@@ -15,7 +14,7 @@
   align-items: center;
 }
 
-/* CONTENU SUR L’IMAGE */
+
 .header-content {
   width: 100%;
   padding: 0 60px;
@@ -36,20 +35,20 @@
 .menu {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;  /* étale bien les liens sur la largeur */
-  flex: 1;                        /* prend tout l’espace dispo à droite du logo */
-  margin-left: 60px;              /* espace entre logo et menu */
+  justify-content: space-evenly;  
+  flex: 1;                       
+  margin-left: 60px;           
 }
 
 .menu a {
   text-decoration: none;
   color: #222;
   font-size: 19px;
-  position: relative;             /* pour le soulignement animé */
+  position: relative;             
   padding-bottom: 4px;
 }
 
-/* soulignement animé pour tous les liens DU MENU sauf billetterie */
+
 .menu a:not(.billetterie)::after {
   content: "";
   position: absolute;
@@ -65,7 +64,7 @@
   width: 100%;
 }
 
-/* BOUTON BILLETTERIE */
+
 .billetterie {
   padding: 8px 18px;
   border: 2px solid #222;
@@ -76,14 +75,14 @@
   transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
 }
 
-/* pas de soulignement pour billetterie */
+
 .billetterie::after {
   content: none;
 }
 
-/* effet bouton léger au survol, sans tout noircir */
+
 .billetterie:hover {
-  background-color: #ffffff;           /* fond clair */
+  background-color: #ffffff;           
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
   transform: translateY(-2px);
 }
@@ -93,7 +92,7 @@
   font-size: 52px;
   text-align: center;
   margin: 80px auto;
-  white-space: nowrap;   /* ← FORCE UNE SEULE LIGNE */
+  white-space: nowrap;   
 }
 
 /* ===== CADRE VERT ===== */
@@ -104,7 +103,7 @@
   margin: 0;
 }
 
-/* TITRE DANS LE CADRE VERT */
+
 .cadre-vert h2 {
   text-align: center;
   font-family: 'Playfair Display', serif;
@@ -112,7 +111,7 @@
   margin-bottom: 50px;
 }
 
-/* ===== IMAGE AVEC TEXTE DESSUS ===== */
+
 .bloc-image {
   position: relative;
   width: calc(100% + 80px);
@@ -127,23 +126,23 @@
   border-radius: 50px;
 }
 
-/* TEXTE BLANC DANS L’IMAGE */
+
 .texte-image {
   position: absolute;
-  top: 52%;              /* ✅ remonte un peu le texte */
+  top: 52%;              
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
 
   font-size: 26px;
-  max-width: 700px;      /* ✅ un tout petit peu plus large */
+  max-width: 700px;     
   line-height: 1.5;
   text-align: left;
 
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
 }
 
-/* ESPACEMENT ENTRE LES PARAGRAPHES */
+
 .texte-image p {
   margin-bottom: 6px;
 }
